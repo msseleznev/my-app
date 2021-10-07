@@ -4,7 +4,7 @@ import c from './ProfileInfo.module.css';
 
 const ProfileInfo = () => {
     return (
-        <div>
+        <div >
             <div className={c.content}>
                 <img src='https://feweek.co.uk/wp-content/uploads/2020/11/rocket-projection-space-feat-1280x720.jpg' />
             </div>

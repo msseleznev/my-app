@@ -1,9 +1,9 @@
-.content {
-    grid-area: c;
-    background-color: rgb(240, 243, 237);
-}
-.content img {
-    
-    height: 200px;
-    width: 700px;
+.profile {
+    display: grid; 
+    grid-area: content; 
+    grid-template-rows: 250px 1fr; 
+    grid-gap: 10px;    
+    grid-template-areas: 
+    "profileInfo"
+    "myPosts";
 }

@@ -1,5 +1,5 @@
-.content {
-    grid-area: c;
+.content {    
+    grid-area: myPosts;   
     background-color: rgb(96, 99, 92);
     
 }

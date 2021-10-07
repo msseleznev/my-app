@@ -1,9 +1,10 @@
 .content {
-    grid-area: c;
+    grid-area: profileInfo;
     background-color: rgb(240, 243, 237);
-}
-.content img {
+    height: 200px;   
     
-    height: 200px;
-    width: 700px;
+}
+.content img {    
+    height: 100%;
+    width: 100%;
 }

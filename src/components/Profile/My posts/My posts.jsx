@@ -14,7 +14,6 @@ const MyPosts = () => {
     return <div className={c.content}>
         <div>
             <h3>My posts </h3>
-
             <div>
                 <div>
                     <textarea></textarea>
