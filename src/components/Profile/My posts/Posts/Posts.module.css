@@ -1,6 +1,10 @@
 .item {
-    
+    display: grid;
     background-color: rgb(160, 161, 159);
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.5);
+    padding: 5px;
+    
 }
 .item img {
     width: 50px;

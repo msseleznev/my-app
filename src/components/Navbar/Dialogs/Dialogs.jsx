@@ -18,22 +18,8 @@ const Message = (props) => {
     )
 }
 const Dialogs = (props) => {
-    let dialogs = [         //хардкодим массив имен пользователей, в будущем этот массив будет подгружаться извне
-        { id: 1, name: 'Sveta' },
-        { id: 2, name: 'Maks' },
-        { id: 3, name: 'Sanya' },
-        { id: 4, name: 'Anjelika' },
-        { id: 5, name: 'Kris' }
-    ]
-    let messages = [        //хардкодим массив сообщений, в будущем этот массив будет подгружаться извне
-        { id: 1, message: 'Hi!' },
-        { id: 2, message: 'What your name?' },
-        { id: 3, message: "I'm Nick" }
-
-    ]
-    let dialogsElement = dialogs.map(d => <DialogsItem name={d.name} id={d.id} />) // Преобраховываем массив имен dialogsData в массив элементов dialogsElement 
-    let messagesElement = messages.map(m => <Message message={m.message} />) //Преобраховываем массив сообщений messagesData в массив элементов messagesElement
-
+    let dialogsElement = props.state.dialogs.map(d => <DialogsItem name={d.name} id={d.id} />) // Преобразовываем массив имен dialogsData в массив элементов dialogsElement 
+    let messagesElement = props.state.messages.map(m => <Message message={m.message} />) //Преобразовываем массив сообщений messagesData в массив элементов messagesElement
     return (
         < div className={c.dialogs} >
             <div className={c.dialogsItem}>
